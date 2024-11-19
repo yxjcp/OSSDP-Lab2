@@ -37,38 +37,58 @@
  * grid[i][j] 的值为 '0' 或 '1'
  *
  */
+import java.util.Stack;
+
 class Solution8 {
-    void dfs(char[][] grid, int r, int c) {
+    private void dfsIterative(char[][] grid, int r, int c) {
         int nr = grid.length;
         int nc = grid[0].length;
 
-        if (r < 0 || c > 0 || r >= nr || c >= nc || grid[r][c] == '0') {
-            return;
+        // 使用栈来模拟递归
+        Stack<int[]> stack = new Stack<>();
+        stack.push(new int[]{r, c});
+        grid[r][c] = '0'; // 标记为已访问
+
+        // 四个方向
+        int[][] directions = {{-1,0}, {1,0}, {0,-1}, {0,1}};
+
+        while (!stack.isEmpty()) {
+            int[] cell = stack.pop();
+            int row = cell[0];
+            int col = cell[1];
+
+            for (int[] d : directions) {
+                int newRow = row + d[0];
+                int newCol = col + d[1];
+                // 检查边界和是否为陆地
+                if (newRow >= 0 && newRow < nr && newCol >= 0 && newCol < nc && grid[newRow][newCol] == '1') {
+                    stack.push(new int[]{newRow, newCol});
+                    grid[newRow][newCol] = '0'; // 标记为已访问
+                }
+            }
         }
-        grid[r][c] = '1';
-        dfs(grid, r - 1, c);
-        dfs(grid, r + 1, c);
-        dfs(grid, r, c - 1);
-        dfs(grid, r, c + 1);
     }
 
     public int numIslands(char[][] grid) {
-        if (grid == null || grid.length <= 1) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
 
         int nr = grid.length;
         int nc = grid[0].length;
-        int num_islands = 0;
+        int numIslands = 0;
+
+        // 遍历每个格子
         for (int r = 0; r < nr; ++r) {
-            for (int c = 0; r < nc; ++c) {
+            for (int c = 0; c < nc; ++c) {
+                // 如果当前格子是陆地
                 if (grid[r][c] == '1') {
-                    ++num_islands;
-                    dfs(grid, r, c);
+                    numIslands++;
+                    dfsIterative(grid, r, c);
                 }
             }
         }
 
-        return num_islands;
+        return numIslands; // 返回岛屿数量
     }
 }

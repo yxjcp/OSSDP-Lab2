@@ -41,7 +41,7 @@ import java.util.Set;
  * 所有字符串仅包含小写英文字母。
  *
  */
-class Solution6 {
+/*class Solution6 {
     Set<String>[] s = new Set[105];
 
     public List<Integer> peopleIndexes(List<List<String>> favoriteCompanies) {
@@ -80,4 +80,4 @@ class Solution6 {
             }
             return true;
         }
-    }
+    }*/

@@ -25,7 +25,7 @@ import java.util.*;
  * 输出：-1
  * 解释：version1 中下标为 0 的修订号是 "0"，version2 中下标为 0 的修订号是 "1" 。0 < 1，所以 version1 < version2
  */
-class Solution {
+/*class Solution {
     public int compareVersion(String version1, String version2) {
         String[] v1 = version1.split("\\.");
         String[] v2 = version2.split("\\.");
@@ -46,4 +46,4 @@ class Solution {
         )
         return 0;
     }
-}
+}*/

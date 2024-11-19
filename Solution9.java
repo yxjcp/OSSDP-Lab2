@@ -36,7 +36,7 @@ import java.util.List;
  * dislikes 中每一组都 不同
  *
  */
-class Solution9 {
+/*class Solution9 {
 
     public boolean possibleBipartition(int n, int[][] dislikes) {
         int[] fa = new int[n + 1];
@@ -83,4 +83,4 @@ class Solution9 {
     public int findFa(int x, int[] fa) {
         return fa[x] > 0 ? x : (fa[x] = findFa(fa[x], fa));
     }
-}
+}*/

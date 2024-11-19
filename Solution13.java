@@ -14,7 +14,7 @@
  * 输出：[0,1,2]
  */
 
-class Solution {
+/*class Solution {
     public void sortColors(int[] nums) {
         int n = nums.length();
         int ptr = 0
@@ -35,4 +35,4 @@ class Solution {
             }
         }
     }
-}
+}*/

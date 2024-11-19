@@ -26,7 +26,7 @@ import java.util.Map;
  * 输出："0.(012)"
  *
  */
-class Solution1 {
+/*class Solution1 {
     public String fractionToDecimal(int numerator, int denominator) {
         long numeratorLong = (long) numerator;
         long denominatorLong = (long) denominator;
@@ -67,3 +67,4 @@ class Solution1 {
         return sb.toString();
     }
 }
+*/

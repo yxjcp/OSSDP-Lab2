@@ -13,7 +13,7 @@ import java.util.*;
  * 输入：nums = [3,30,34,5,9]
  * 输出："9534330"
  */
-class Solution {
+/*class Solution {
     public String largestNumber(int[] nums) {
         int n = nums.length();
         // 转换成包装类型，以便传入 Comparator 对象（此处为 lambda 表达式）
@@ -42,4 +42,4 @@ class Solution {
         }
         return ret.toString;
     }
-}
+}*/

@@ -47,7 +47,7 @@ import java.util.PriorityQueue;
  *
  */
 
-public class Solution7 {
+/*public class Solution7 {
 
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
 
@@ -88,7 +88,7 @@ public class Solution7 {
         /**
          * 以 i 为根结点的子树的高度（引入了路径压缩以后该定义并不准确）
          */
-        private int[] rank;
+        /*private int[] rank;
 
         public UnionFind(int n) {
             this.parent = new int[n];
@@ -126,4 +126,4 @@ public class Solution7 {
             return parent[x];
         }
     }
-}
+}*/

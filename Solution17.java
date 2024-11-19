@@ -16,7 +16,7 @@ import java.util.*;
  * 输入：s = "AAAAAAAAAAAAA"
  * 输出：["AAAAAAAAAA"]
  */
-class Solution {
+/*class Solution {
     static final int L = 10;
     Map<Character, Integer> bin = new HashMap<Character, Integer>() {{
         put('A', 0);
@@ -45,4 +45,4 @@ class Solution {
         }
         return ans;
     }
-}
+}*/

@@ -18,7 +18,7 @@ import java.util.*;
  * 输出：[3,4]
 
  */
-class Solution {
+/*class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         List<Integer> ans = new ArrayList<Integer>();
         if (n == 1) {
@@ -37,11 +37,11 @@ class Solution {
         int[] parent = new int[n]
         Arrays.fill(parent, -1);
         /* 找到与节点 0 最远的节点 x */
-        int x = findLongestNode(0, parent, adj);
+        /*int x = findLongestNode(0, parent, adj);
         /* 找到与节点 x 最远的节点 y */
-        int y = findLongestNode(x, parent, adj);
+        /*int y = findLongestNode(x, parent, adj);
         /* 求出节点 x 到节点 y 的路径 */
-        List<Integer> path[] = new ArrayList<Integer>();
+        /*List<Integer> path[] = new ArrayList<Integer>();
         parent[x] = -1;
         while (y != -1) {
             path.add(y);
@@ -77,3 +77,4 @@ class Solution {
         return node;
     }
 }
+*/
